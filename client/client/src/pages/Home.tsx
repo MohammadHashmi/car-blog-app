@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HomepageImage from "../assets/main-car.jpg";
 
 export default function Home() {
@@ -16,9 +17,12 @@ export default function Home() {
               idk"
             </h3>
             <div className="flex justify-center mt-2 ">
-              <button className=" font-bold bg-transparent border border-white ease-in duration-200 hover:bg-white hover:text-black py-2 px-4 rounded mr-2">
-                Write An Article
-              </button>
+              <Link to="/write">
+                <button className=" font-bold bg-transparent border border-white ease-in duration-200 hover:bg-white hover:text-black py-2 px-4 rounded mr-2">
+                  Write An Article
+                </button>
+              </Link>
+
               <button className="font-bold bg-transparent border border-white ease-in duration-200 hover:bg-white hover:text-black py-2 px-4 rounded mr-2">
                 Explore Our Articles
               </button>

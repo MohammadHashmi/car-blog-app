@@ -10,7 +10,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/write" element={<Write />} />
       </Routes>
-      ;
     </>
   );
 }
