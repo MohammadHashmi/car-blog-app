@@ -2,6 +2,7 @@ import MDEditor from "@uiw/react-md-editor";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Modal from "../components/Modal";
+import Submission from "../components/Submission";
 
 export default function Write() {
   const [value, setValue] = useState<any | null>(
@@ -24,9 +25,7 @@ enter your own text here
         />
 
         <div className="flex justify-center">
-          <button className="text-white font-bold bg-transparent border border-white ease-in duration-200 hover:bg-white hover:text-black py-2 px-4 rounded m-2">
-            Submit Article
-          </button>
+          <Submission />
           <Link to="/">
             <button className="text-white font-bold bg-transparent border border-white ease-in duration-200 hover:bg-white hover:text-black py-2 px-4 rounded m-2">
               Return Home
